@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         burtons: "burtons",
-        // poppins: ["Poppins", "sans-serif"],
+        Inter: ['Inter', 'sans-serif']
       },
     },
   },
