@@ -1,12 +1,14 @@
+import { useState } from "react";
 import Head from "next/head";
 import {
-  AiFillTwitterCircle,
+  AiFillGithub,
   AiFillLinkedin,
-  AiFillYoutube,
 } from "react-icons/ai";
+import { IoLogoWhatsapp } from "react-icons/io"
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useState } from "react";
+
 import deved from "../public/dev-ed-wave.png";
+
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -61,11 +63,11 @@ export default function Home() {
               needs. Join me down below and let's get cracking!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href=""> <AiFillTwitterCircle /> </a>
+              <a href="https://github.com/henriquemattia" target='_blank'> <AiFillGithub /> </a>
 
-              <a href="http://github.com/henriquemattia" target='_blank'> <AiFillLinkedin /> </a>
+              <a href="https://www.linkedin.com/in/henriquemattia/" target='_blank' > <AiFillLinkedin /> </a>
 
-              <a href=""> <AiFillYoutube /> </a>
+              <a href="https://wa.me/5549998339450" target='_blank'> <IoLogoWhatsapp /> </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
