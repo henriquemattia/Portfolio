@@ -44,7 +44,7 @@ export default function Home() {
                   className="bg-gradient-to-r from-cyan-500 t text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="#"
                 >
-                  Resume
+                  Contact
                 </a>
               </li>
             </ul>
@@ -53,17 +53,17 @@ export default function Home() {
             <h2 className=" font-extrabold text-6xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
               Henrique Mattia
             </h2>
-            <h3 className="font-bold text-3xl py-2 opacity-80 dark:text-white md:text-3xl">
+            <h3 className="font-bold text-zinc-900 text-4xl pt-5 opacity-90 dark:text-white md:text-3xl">
               Full stack Developer
             </h3>
-            <p className="font-semibold  text-md py-7 leading-8 text-gray-600 dark:text-gray-200 max-w-xl mx-auto md:text-lg opacity-90">
+            <p className="font-semibold  text-lg pt-9 pb-4 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300 max-w-xl mx-auto  md:text-lg ">
               Freelancer providing services for programming and design content
               needs. Join me down below and let's get cracking!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href=""> <AiFillTwitterCircle /> </a>
 
-              <a href="http://github.com/henriquemattia"> <AiFillLinkedin /> </a>
+              <a href="http://github.com/henriquemattia" target='_blank'> <AiFillLinkedin /> </a>
 
               <a href=""> <AiFillYoutube /> </a>
             </div>
@@ -72,10 +72,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        {/* <section>
           <div>
-            <h3 className="font-bold text-black text-3xl py-1 dark:text-white ">Services I offer</h3>
-            <p className="font-semibold text-md py-2 leading-8 text-gray-600 dark:text-gray-200">
+            <h3 className="font-bold text-black text-3xl py-1 opacity-80 dark:text-white ">Services I offer</h3>
+            <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -83,13 +83,13 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white  opacity-90 flex-1">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Beautiful Designs
@@ -133,11 +133,13 @@ export default function Home() {
               <p className="text-gray-800 py-1">Indesign</p>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <h3 className=" font-bold text-3xl py-1 text-zinc-900 opacity-90 dark:text-white ">
+              Portfólio
+            </h3>
+            <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -145,7 +147,7 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-zinc-300">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
