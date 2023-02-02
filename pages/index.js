@@ -43,10 +43,10 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 t text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="#"
                 >
-                  Contact
+                  Projects
                 </a>
               </li>
             </ul>
@@ -69,12 +69,14 @@ export default function Home() {
 
               <a href="https://wa.me/5549998339450" target='_blank'> <IoLogoWhatsapp /> </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="flex justify-center items-center">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden bg-gray-800 mt-20 md:h-96 md:w-96 ">
               <Image src={deved} layout="fill" objectFit="cover" />
+            </div>
             </div>
           </div>
         </section>
-        {/* <section>
+        <section>
           <div>
             <h3 className="font-bold text-black text-3xl py-1 opacity-80 dark:text-white ">Services I offer</h3>
             <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300">
@@ -135,7 +137,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Indesign</p>
             </div>
           </div>
-        </section> */}
+        </section>
         <section className="py-10">
           <div>
             <h3 className=" font-bold text-3xl py-1 text-zinc-900 opacity-90 dark:text-white ">
@@ -149,7 +151,7 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-zinc-300">
+            <p className="font-semibold text-md py-2 leading-8 text-zinc-900 opacity-80 dark:text-zinc-300">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
