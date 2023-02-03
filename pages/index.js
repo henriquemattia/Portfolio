@@ -88,32 +88,8 @@ export default function Home() {
               Abaixa estão algumas das pricipais tecnologias com que sei trabalhar
             </p>
           </div>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-zinc-100  opacity-90 flex-1">
-              <Image src={js} width={100} height={100} />
-              <h3 className="text-2xl font-bold pt-8 pb-2  ">
-                Front-End
-              </h3>
-              <p className="py-2 font-semibold opacity-80 text-lg">
-                Java scrip é um linguagem de programção amplemente usada para desenvolvimento de sistemas entre outras aplicações como:
-              </p>
-
-              <h4 className="py-4 text-teal-600 text-xl font-bold">Plataformas</h4>
-
-              <div className="flex justify-center items-center pb-3 gap-3">
-                <Image src={react} width={50} height={50} /><span className="text-gray-800 py-1 text-lg font-semibold">React-JS</span>
-              </div>
-
-              <div className="flex justify-center items-center pb-3 gap-3">
-                <Image src={react} width={50} height={50} /><span className="text-gray-800 py-1 text-lg font-semibold">React-JS</span>
-              </div>
-
-              <div className="flex justify-center items-center pb-3 gap-3">
-                <Image src={react} width={50} height={50} /><span className="text-gray-800 py-1 text-lg font-semibold">React-JS</span>
-              </div>
-            </div>
-
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-zinc-100  opacity-90 flex-1">
+          <div className="xl:flex gap-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-zinc-100  opacity-90 flex-1">
               <Image src={js} width={100} height={100} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
                 Back-end
@@ -123,41 +99,89 @@ export default function Home() {
               </p>
 
               <h4 className="py-4 text-teal-600 text-xl font-bold">Plataformas</h4>
+              <div className="flex  flex-row justify-center">
 
-              <div className="flex justify-center items-center pb-3 gap-3">
-                <Image src={react} width={50} height={50} /><span className="text-gray-800 py-1 text-lg font-semibold">React-JS</span>
-              </div>
+                {/* IMAGES */}
+                <div className="flex flex-col justify-center items-center min-w-max gap-3">
+                  <Image src={react} width={50} height={50} />
 
-              <div className="flex justify-center items-center pb-3 gap-3">
-                <Image src={react} width={50} height={50} /><span className="text-gray-800 py-1 text-lg font-semibold">React-JS</span>
-              </div>
+                  <Image src={react} width={50} height={50} />
 
-              <div className="flex justify-center items-center pb-3 gap-3">
-                <Image src={react} width={50} height={50} /><span className="text-gray-800 py-1 text-lg font-semibold">React-JS</span>
+                  <Image src={react} width={50} height={50} />
+                </div>
+
+                {/* NAMES */}
+                <div className="font-semibold flex items-start flex-col gap-9 ml-2 py-4">
+                  <p>REACT</p>
+                  <p>- dfsdfsdfsdsASAsfsdf</p>
+                  <p>- REACT</p>
+
+                </div>
+
               </div>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-zinc-100  opacity-90 flex-1">
-              <Image src={js} width={100} height={100} />
+              <Image src={node} width={135} height={100} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
-                DevOps
+                Back-end
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
                 Java scrip é um linguagem de programção amplemente usada para desenvolvimento de sistemas entre outras aplicações como:
               </p>
 
               <h4 className="py-4 text-teal-600 text-xl font-bold">Plataformas</h4>
+              <div className="flex  flex-row justify-center">
 
-              <div className="flex justify-center items-center pb-3 gap-3">
-                <Image src={react} width={50} height={50} /><span className="text-gray-800 py-1 text-lg font-semibold">React-JS</span>
+                {/* IMAGES */}
+                <div className="flex flex-col justify-center items-center min-w-max gap-3">
+                  <Image src={react} width={50} height={50} />
+
+                  <Image src={react} width={50} height={50} />
+
+                  <Image src={react} width={50} height={50} />
+                </div>
+
+                {/* NAMES */}
+                <div className="font-semibold flex items-start flex-col gap-9 ml-2 py-4">
+                  <p>REACT</p>
+                  <p>- dfsdfsdfsdsASAsfsdf</p>
+                  <p>- REACT</p>
+
+                </div>
+
               </div>
+            </div>
 
-              <div className="flex justify-center items-center pb-3 gap-3">
-                <Image src={react} width={50} height={50} /><span className="text-gray-800 py-1 text-lg font-semibold">React-JS</span>
-              </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-zinc-100  opacity-90 flex-1">
+              <Image src={react} width={100} height={100} />
+              <h3 className="text-2xl font-bold pt-8 pb-2  ">
+                Back-end
+              </h3>
+              <p className="py-2 font-semibold opacity-80 text-lg">
+                Java scrip é um linguagem de programção amplemente usada para desenvolvimento de sistemas entre outras aplicações como:
+              </p>
 
-              <div className="flex justify-center items-center pb-3 gap-3">
-                <Image src={react} width={50} height={50} /><span className="text-gray-800 py-1 text-lg font-semibold">React-JS</span>
+              <h4 className="py-4 text-teal-600 text-xl font-bold">Plataformas</h4>
+              <div className="flex  flex-row justify-center">
+
+                {/* IMAGES */}
+                <div className="flex flex-col justify-center items-center min-w-max gap-3">
+                  <Image src={react} width={50} height={50} />
+
+                  <Image src={react} width={50} height={50} />
+
+                  <Image src={react} width={50} height={50} />
+                </div>
+
+                {/* NAMES */}
+                <div className="font-semibold flex items-start flex-col gap-9 ml-2 py-4">
+                  <p>REACT</p>
+                  <p>- dfsdfsdfsdsASAsfsdf</p>
+                  <p>- REACT</p>
+
+                </div>
+
               </div>
             </div>
           </div>
