@@ -42,7 +42,7 @@ export default function Home() {
       <main className="font-Inter bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-sm sm:text-xl">JS DEVELOPER</h1>
+            <h1 className="font-burtons text-md  sm:text-xl">Olá!</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -52,7 +52,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-3 py-2 border-none rounded-md ml-3 sm:px-4 sm:ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-3 py-2 border-none rounded-md ml-5 sm:px-4 sm:ml-8"
                   href="#"
                 >
                   Projects
@@ -64,10 +64,10 @@ export default function Home() {
             <h2 className=" font-extrabold text-4xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
               Henrique Mattia
             </h2>
-            <h3 className="font-bold text-zinc-900 text-2xl pt-5 opacity-90 dark:text-white md:text-4xl">
+            <h3 className="font-bold text-zinc-900 text-2xl  opacity-90 dark:text-white md:text-4xl md:pt-5">
               Full stack Developer
             </h3>
-            <p className="font-semibold  text-lg pt-9 pb-4 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300 max-w-xl mx-auto  md:text-lg ">
+            <p className="font-semibold  text-md pt-9 pb-4 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300 max-w-xl mx-auto  md:text-lg ">
               Desenvolvedor que presta serviços para necessidades de conteúdo de programação. Junte-se a mim abaixo e vamos lá!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
