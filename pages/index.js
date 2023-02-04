@@ -13,6 +13,15 @@ import Image from "next/image";
 import node from "../public/tecnologias/node.png";
 import js from "../public/tecnologias/js.png";
 import react from "../public/tecnologias/react.png";
+import docker from "../public/tecnologias/docker.png";
+import devOps from "../public/tecnologias/devOps.png";
+import typescript from "../public/tecnologias/typescript.png";
+import tailwindcss from "../public/tecnologias/tailwindcss.png";
+import mobile from "../public/tecnologias/mobile.png";
+import aws from "../public/tecnologias/aws.png";
+import prisma from "../public/tecnologias/prisma.png";
+import express from "../public/tecnologias/express.png";
+import postgresql from "../public/tecnologias/postgresql.png";
 
 import web1 from "../public/portfolio/web1.png";
 import web2 from "../public/portfolio/web2.png";
@@ -89,32 +98,33 @@ export default function Home() {
             </p>
           </div>
           <div className="xl:flex gap-10">
-          <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-zinc-100  opacity-90 flex-1">
-              <Image src={js} width={100} height={100} />
+          <div className="text-center shadow-xl p-10 rounded-xl  my-10 transition duration-300 ease-in transform 
+                       hover:-translate-y-1 hover:scale-105 dark:bg-zinc-100  opacity-90 flex-1">
+              <Image src={react} width={100} height={100} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
-                Back-end
+                Front-end
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
-                Java scrip é um linguagem de programção amplemente usada para desenvolvimento de sistemas entre outras aplicações como:
+                No front-end a linguagem que utilo é o <span className="text-teal-600">JavaScript</span> com a biblioteca React.Js entre outras features.
               </p>
 
-              <h4 className="py-4 text-teal-600 text-xl font-bold">Plataformas</h4>
-              <div className="flex  flex-row justify-center">
+              <h4 className="py-4 text-teal-600 text-xl font-bold">Principais</h4>
+              <div className="flex  flex-row justify-center  ">
 
                 {/* IMAGES */}
                 <div className="flex flex-col justify-center items-center min-w-max gap-3">
                   <Image src={react} width={50} height={50} />
 
-                  <Image src={react} width={50} height={50} />
+                  <Image src={typescript} width={50} height={50} />
 
-                  <Image src={react} width={50} height={50} />
+                  <Image src={tailwindcss} width={50} height={50} />
                 </div>
 
                 {/* NAMES */}
-                <div className="font-semibold flex items-start flex-col gap-9 ml-2 py-4">
+                <div className="font-semibold flex items-start flex-col gap-9 ml-4 py-4">
                   <p>REACT</p>
-                  <p>- dfsdfsdfsdsASAsfsdf</p>
-                  <p>- REACT</p>
+                  <p>TypeScript</p>
+                  <p>Tailwindcss</p>
 
                 </div>
 
@@ -127,26 +137,26 @@ export default function Home() {
                 Back-end
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
-                Java scrip é um linguagem de programção amplemente usada para desenvolvimento de sistemas entre outras aplicações como:
+                No back-end as coisas continuam no mesmo ambiente com o <span className="text-teal-600">Node.Js</span>, e bancos de dados como NoSQL e principalmente SQL.
               </p>
 
-              <h4 className="py-4 text-teal-600 text-xl font-bold">Plataformas</h4>
+              <h4 className="py-4 text-teal-600 text-xl font-bold">Principais</h4>
               <div className="flex  flex-row justify-center">
 
                 {/* IMAGES */}
                 <div className="flex flex-col justify-center items-center min-w-max gap-3">
-                  <Image src={react} width={50} height={50} />
+                  <Image src={express} width={50} height={50} />
 
-                  <Image src={react} width={50} height={50} />
+                  <Image src={prisma} width={45} height={50} />
 
-                  <Image src={react} width={50} height={50} />
+                  <Image src={postgresql} width={50} height={50} />
                 </div>
 
                 {/* NAMES */}
-                <div className="font-semibold flex items-start flex-col gap-9 ml-2 py-4">
-                  <p>REACT</p>
-                  <p>- dfsdfsdfsdsASAsfsdf</p>
-                  <p>- REACT</p>
+                <div className="font-semibold flex items-start flex-col gap-9 ml-4 py-4">
+                  <p>Express</p>
+                  <p>Pisma</p>
+                  <p>PostgreSQl</p>
 
                 </div>
 
@@ -154,12 +164,12 @@ export default function Home() {
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-zinc-100  opacity-90 flex-1">
-              <Image src={react} width={100} height={100} />
+              <Image src={devOps} width={235} height={110} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
-                Back-end
+                Outros
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
-                Java scrip é um linguagem de programção amplemente usada para desenvolvimento de sistemas entre outras aplicações como:
+                Apesar de nao ser minha especialização a area de <span className="text-teal-600">DevOps</span> e abaixo tem algumas tecnologias que utilizo.
               </p>
 
               <h4 className="py-4 text-teal-600 text-xl font-bold">Plataformas</h4>
@@ -167,18 +177,18 @@ export default function Home() {
 
                 {/* IMAGES */}
                 <div className="flex flex-col justify-center items-center min-w-max gap-3">
-                  <Image src={react} width={50} height={50} />
+                  <Image src={docker} width={50} height={50} />
 
-                  <Image src={react} width={50} height={50} />
+                  <Image src={aws} width={50} height={50} />
 
-                  <Image src={react} width={50} height={50} />
+                  <Image src={mobile} width={50} height={50} />
                 </div>
 
                 {/* NAMES */}
-                <div className="font-semibold flex items-start flex-col gap-9 ml-2 py-4">
-                  <p>REACT</p>
-                  <p>- dfsdfsdfsdsASAsfsdf</p>
-                  <p>- REACT</p>
+                <div className="font-semibold flex items-start flex-col gap-9 ml-4 py-4">
+                  <p>Docker</p>
+                  <p>AWS</p>
+                  <p>React-Native</p>
 
                 </div>
 
