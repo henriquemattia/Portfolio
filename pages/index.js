@@ -72,15 +72,25 @@ export default function Home() {
               Desenvolvedor que presta serviços para necessidades de conteúdo de programação. Junte-se a mim abaixo e vamos lá!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://github.com/henriquemattia" target='_blank'> <AiFillGithub /> </a>
+              <a href="https://github.com/henriquemattia"
+                target='_blank'
+                className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              > <AiFillGithub /> </a>
 
-              <a href="https://www.linkedin.com/in/henriquemattia/" target='_blank' > <AiFillLinkedin /> </a>
+              <a href="https://www.linkedin.com/in/henriquemattia/"
+                target='_blank'
+                className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              > <AiFillLinkedin /> </a>
 
-              <a href="https://wa.me/5549998339450" target='_blank'> <IoLogoWhatsapp /> </a>
+              <a href="https://wa.me/5549998339450"
+                target='_blank'
+                className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              ><IoLogoWhatsapp /> </a>
+
             </div>
             <div className="flex justify-center items-center">
               <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden bg-gray-800 mt-20 md:h-96 md:w-96 ">
-                <Image src={deved} layout="fill" objectFit="cover" />
+                <Image src={deved} layout="fill" objectFit="cover" className="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105" />
               </div>
             </div>
           </div>
@@ -98,8 +108,10 @@ export default function Home() {
             </p>
           </div>
           <div className="xl:flex gap-10">
-          <div className="text-center shadow-xl p-10 rounded-xl  my-10 transition duration-300 ease-in transform 
-                       hover:-translate-y-1 hover:scale-105 dark:bg-zinc-100  opacity-90 flex-1">
+            <div className="text-center shadow-xl p-10 rounded-xl my-10 
+            transition duration-150 ease-in transform hover:-translate-y-1 hover:scale-105
+          dark:bg-zinc-100  opacity-90 flex-1"
+            >
               <Image src={react} width={100} height={100} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
                 Front-end
@@ -131,7 +143,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-zinc-100  opacity-90 flex-1">
+            <div className="text-center shadow-xl p-10 rounded-xl my-10 
+              transition duration-150 ease-in transform hover:-translate-y-1 hover:scale-105
+            dark:bg-zinc-100  opacity-90 flex-1"
+            >
               <Image src={node} width={135} height={100} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
                 Back-end
@@ -163,7 +178,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-zinc-100  opacity-90 flex-1">
+            <div className="text-center shadow-xl p-10 rounded-xl my-10 
+              transition duration-150 ease-in transform hover:-translate-y-1 hover:scale-105
+            dark:bg-zinc-100  opacity-90 flex-1"
+            >
               <Image src={devOps} width={235} height={110} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
                 Outros
