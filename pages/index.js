@@ -22,7 +22,7 @@ import prisma from "../public/tecnologias/prisma.png";
 import express from "../public/tecnologias/express.png";
 import postgresql from "../public/tecnologias/postgresql.png";
 
-import web1 from "../public/portfolio/web1.png";
+import ngCash from "../public/portfolio/ngCash.png";
 import web2 from "../public/portfolio/web2.png";
 import web3 from "../public/portfolio/web3.png";
 import web4 from "../public/portfolio/web4.png";
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center">
               <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden bg-gray-800 mt-20 md:h-96 md:w-96 ">
-                <Image src={deved} layout="fill" objectFit="cover" className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" />
+                <Image src={deved} layout="fill" objectFit="cover" className="transition duration-500 ease-linear transform hover:-translate-y-1 hover:scale-105 " />
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function Home() {
               </p>
 
               <h4 className="py-4 text-teal-600 text-xl font-bold">Principais</h4>
-              <div className="flex  flex-row justify-center  ">
+              <div className="flex  flex-row justify-center ">
 
                 {/* IMAGES */}
                 <div className="flex flex-col justify-center items-center min-w-max gap-3">
@@ -233,22 +233,47 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
+
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:rounded-lg"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web1}
+                src={ngCash}
               />
+              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                <a href="https://github.com/henriquemattia"
+                  target='_blank'
+                  className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                > <AiFillGithub /> </a>
+
+                <a href="https://www.linkedin.com/in/henriquemattia/"
+                  target='_blank'
+                  className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                > <AiFillLinkedin /> </a>
+
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-150 "
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web2}
               />
+              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                <a href="https://github.com/henriquemattia"
+                  target='_blank'
+                  className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                > <AiFillGithub /> </a>
+
+                <a href="https://www.linkedin.com/in/henriquemattia/"
+                  target='_blank'
+                  className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                > <AiFillLinkedin /> </a>
+
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
