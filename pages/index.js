@@ -32,6 +32,15 @@ import web6 from "../public/portfolio/web6.png";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
 
+  const [image1, setImage1] = useState(false)
+  const [image2, setImage2] = useState(false)
+  function img1 (){
+    setImage1(!image1)
+  }
+  
+  function img2 (){
+    setImage2(!image2)
+  }
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -232,15 +241,20 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-110 hover:z-20">
 
               <Image
-                className="rounded-lg object-cover transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:rounded-lg"
+                className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={ngCash}
               />
+              <button className="text-white text-semibold mt-2 pl-2"
+              onClick={img1}
+              >Ver mais...</button>
+              {image1 == true ? <div className="text-white">clicado</div> : null}
+              {/* Butoies */}
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <a href="https://github.com/henriquemattia"
                   target='_blank'
@@ -262,6 +276,20 @@ export default function Home() {
                 layout="responsive"
                 src={web2}
               />
+              <button className="text-white text-semibold mt-2 pl-2"
+              onClick={img2}
+              >Ver mais...</button>
+              {image2 == true ? <div className="text-white"><p>jhvkjfjkvkvjkvkjhvjh</p>
+              <p>jhvkjfjkvkvjkvkjhvjh</p>
+              <p>jhvkjfjkvkvjkvkjhvjh</p>
+              <p>jhvkjfjkvkvjkvkjhvjh</p>
+              <p>jhvkjfjkvkvjkvkjhvjh</p>
+              <p>jhvkjfjkvkvjkvkjhvjh</p>
+              
+              </div> : null}
+
+
+              {/* biotoius */}
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <a href="https://github.com/henriquemattia"
                   target='_blank'
