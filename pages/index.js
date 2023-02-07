@@ -34,12 +34,28 @@ export default function Home() {
 
   const [image1, setImage1] = useState(false)
   const [image2, setImage2] = useState(false)
-  function img1 (){
+  const [image3, setImage3] = useState(false)
+  const [image4, setImage4] = useState(false)
+  const [image5, setImage5] = useState(false)
+  const [image6, setImage6] = useState(false)
+  function img1() {
     setImage1(!image1)
   }
-  
-  function img2 (){
+
+  function img2() {
     setImage2(!image2)
+  }
+  function img3() {
+    setImage3(!image3)
+  }
+  function img4() {
+    setImage4(!image4)
+  }
+  function img5() {
+    setImage5(!image5)
+  }
+  function img6() {
+    setImage6(!image6)
   }
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -49,6 +65,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="font-Inter bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+        {/* navbar and first block */}
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-md  sm:text-xl">Olá!</h1>
@@ -103,16 +120,17 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* description of me */}
         <section>
           <div>
             <h3 className="font-bold text-black mt-10 text-3xl py-1 opacity-80 dark:text-white ">Quem sou eu?</h3>
             <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300">
-              Sou um jovem desenvolvedor, e entusiasta da <span className="text-teal-500"> tecnologia</span>, venho apriomorando minhas abilidades em desenvolvimento web por volta de um
-              <span className="text-teal-500"> ano </span>
+              Sou um jovem desenvolvedor, e entusiasta da <span className="text-teal-500"> tecnologia!</span> Em 2022 comecei a estudar a tão sonhada programação, começando com pequenos cursos no Youtube e muita <span className="text-teal-500">vontade!</span> Atualmente já possuo certificações de 3 instituições de ensino tec. E venho a cada semana me especializando mais e mais.
 
             </p>
             <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300">
-              Abaixa estão algumas das pricipais tecnologias com que sei trabalhar
+              Abaixo estão algumas das pricipais <span className="text-teal-500">tecnologias</span> com que sei trabalhar.
             </p>
           </div>
           <div className="xl:flex gap-10">
@@ -125,7 +143,7 @@ export default function Home() {
                 Front-end
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
-                No front-end a linguagem que utilo é o <span className="text-teal-600">JavaScript</span> com a biblioteca React.Js entre outras features.
+                No front-end a linguagem que utilo é o <span className="text-teal-600">JavaScript</span> com a biblioteca <span className="text-teal-600">React.Js</span> entre outras features.
               </p>
 
               <h4 className="py-4 text-teal-600 text-xl font-bold">Principais</h4>
@@ -160,7 +178,7 @@ export default function Home() {
                 Back-end
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
-                No back-end as coisas continuam no mesmo ambiente com o <span className="text-teal-600">Node.Js</span>, e bancos de dados como NoSQL e principalmente SQL.
+                No back-end as coisas continuam no mesmo ambiente com o <span className="text-teal-600">Node.Js</span>, e bancos de dados como NoSQL e principalmente <span className="text-teal-600">SQL</span>.
               </p>
 
               <h4 className="py-4 text-teal-600 text-xl font-bold">Principais</h4>
@@ -192,13 +210,13 @@ export default function Home() {
             >
               <Image src={devOps} width={235} height={110} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
-                Outros
+                DevOps e Outros
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
-                Apesar de nao ser minha especialização a area de <span className="text-teal-600">DevOps</span> e abaixo tem algumas tecnologias que utilizo.
+                Apesar de <span className="text-teal-600">DevOps</span> e <span className="text-teal-600">mobile</span> não serem minha áreas de especialização consigo utilizar algumas tecnologias como...
               </p>
 
-              <h4 className="py-4 text-teal-600 text-xl font-bold">Plataformas</h4>
+              <h4 className="py-4 text-teal-600 text-xl font-bold">Principais</h4>
               <div className="flex  flex-row justify-center">
 
                 {/* IMAGES */}
@@ -222,6 +240,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Portfolio */}
         <section className="py-10">
           <div>
             <h3 className=" font-bold text-3xl py-1 text-zinc-900 opacity-90 dark:text-white ">
@@ -241,7 +261,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-110 hover:z-20">
+            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 1*/}
 
               <Image
                 className="rounded-lg object-cover"
@@ -250,60 +270,70 @@ export default function Home() {
                 layout="responsive"
                 src={ngCash}
               />
-              <button className="text-white text-semibold mt-2 pl-2"
-              onClick={img1}
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+                onClick={img1}
               >Ver mais...</button>
-              {image1 == true ? <div className="text-white">clicado</div> : null}
-              {/* Butoies */}
-              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-                <a href="https://github.com/henriquemattia"
-                  target='_blank'
-                  className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                > <AiFillGithub /> </a>
+              {
+                image1 == true ?
+                  <div className="text-white">
 
-                <a href="https://www.linkedin.com/in/henriquemattia/"
-                  target='_blank'
-                  className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                > <AiFillLinkedin /> </a>
+                    {/* Butoies */}
+                    <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                      <a href="https://github.com/henriquemattia"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillGithub /> </a>
 
-              </div>
+                      <a href="https://www.linkedin.com/in/henriquemattia/"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillLinkedin /> </a>
+                    </div>
+                  </div>
+                  : null
+              }
+
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1"> {/* Imagem 2*/}
               <Image
-                className="rounded-lg object-cover transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-150 "
+                className="rounded-lg object-cover transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web2}
               />
-              <button className="text-white text-semibold mt-2 pl-2"
-              onClick={img2}
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+                onClick={img2}
               >Ver mais...</button>
-              {image2 == true ? <div className="text-white"><p>jhvkjfjkvkvjkvkjhvjh</p>
-              <p>jhvkjfjkvkvjkvkjhvjh</p>
-              <p>jhvkjfjkvkvjkvkjhvjh</p>
-              <p>jhvkjfjkvkvjkvkjhvjh</p>
-              <p>jhvkjfjkvkvjkvkjhvjh</p>
-              <p>jhvkjfjkvkvjkvkjhvjh</p>
-              
-              </div> : null}
+              {
+                image2 == true ?
+                  <div className="text-white"><p>jhvkjfjkvkvjkvkjhvjh</p>
+                    <p>jhvkjfjkvkvjkvkjhvjh</p>
+                    <p>jhvkjfjkvkvjkvkjhvjh</p>
+                    <p>jhvkjfjkvkvjkvkjhvjh</p>
+                    <p>jhvkjfjkvkvjkvkjhvjh</p>
+                    <p>jhvkjfjkvkvjkvkjhvjh</p>
+
+                    {/* biotoius */}
+                    <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                      <a href="https://github.com/henriquemattia"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillGithub /> </a>
+
+                      <a href="https://www.linkedin.com/in/henriquemattia/"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillLinkedin /> </a>
+
+                    </div>
+                  </div>
+                  : null
+              }
 
 
-              {/* biotoius */}
-              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-                <a href="https://github.com/henriquemattia"
-                  target='_blank'
-                  className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                > <AiFillGithub /> </a>
-
-                <a href="https://www.linkedin.com/in/henriquemattia/"
-                  target='_blank'
-                  className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                > <AiFillLinkedin /> </a>
-
-              </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1"> {/* Imagem 3*/}
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -311,17 +341,27 @@ export default function Home() {
                 layout="responsive"
                 src={web3}
               />
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+                onClick={img3}
+              >Ver mais...</button>
+              {image3 == true ? <div className="text-white">clicado</div> : null}
+              {/* Butoies */}
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1"> {/* Imagem 4*/}
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web4}
+                src={ngCash}
               />
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+                onClick={img4}
+              >Ver mais...</button>
+              {image4 == true ? <div className="text-white">clicado</div> : null}
+              {/* Butoies */}
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1"> {/* Imagem 5*/}
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -329,8 +369,13 @@ export default function Home() {
                 layout="responsive"
                 src={web5}
               />
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+                onClick={img5}
+              >Ver mais...</button>
+              {image5 == true ? <div className="text-white">clicado</div> : null}
+              {/* Butoies */}
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1"> {/* Imagem 6*/}
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -338,6 +383,11 @@ export default function Home() {
                 layout="responsive"
                 src={web6}
               />
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+                onClick={img6}
+              >Ver mais...</button>
+              {image6 == true ? <div className="text-white">clicado</div> : null}
+              {/* Butoies */}
             </div>
           </div>
         </section>
