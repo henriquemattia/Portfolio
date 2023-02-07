@@ -23,9 +23,9 @@ import express from "../public/tecnologias/express.png";
 import postgresql from "../public/tecnologias/postgresql.png";
 
 import ngCash from "../public/portfolio/ngCash.png";
+import habits from "../public/portfolio/habits.png";
 import web2 from "../public/portfolio/web2.png";
 import web3 from "../public/portfolio/web3.png";
-import web4 from "../public/portfolio/web4.png";
 import web5 from "../public/portfolio/web5.png";
 import web6 from "../public/portfolio/web6.png";
 
@@ -268,7 +268,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={ngCash}
+                src={habits}
               />
               <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
                 onClick={img1}
