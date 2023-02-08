@@ -88,7 +88,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center sm:py-10">
-            <h2 className=" font-extrabold text-4xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
+            <h2 className="font-extrabold text-4xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
               Henrique Mattia
             </h2>
             <h3 className="font-bold text-zinc-900 text-2xl  opacity-90 dark:text-white md:text-4xl md:pt-5">
@@ -271,26 +271,26 @@ export default function Home() {
                 layout="responsive"
                 src={tera}
               />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 mb-2 transition ease-in duration-150 hover:text-teal-400"
+              <button className=" text-teal-600 font-bold text-lg mt-2 pl-2 mb-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img1}
               >Sobre...</button>
               {
                 image1 == true ?
 
 
-                  <div className="border-2 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700">
+                  <div className="border-2 mb-14 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700 ">
                     {/* TEXT DESCRIPTION */}
                     <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
                       <h4 className="font-bold text-xl">Descrição</h4>
                       <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                        HFM-Roupas foi meu primeiro projeto Full-Stack em grande escala, que é um e-commerce de roupas,<span className="text-teal-600">100%</span> desenvolvido por mim durante o curso "Full Stack developer" da TERA.
+                        HFM-Roupas foi meu primeiro projeto Full-Stack em grande escala, que é um e-commerce de roupas <span className="text-teal-600">100%</span> desenvolvido por mim durante o curso <span className="text-teal-600">"Full Stack developer"</span>  da TERA.
                       </p>
                       <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
                       <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                        <p>- Sistema de Login completo, com encriptamento de senha, e token <span className="text-teal-600">JWT</span></p>
-                        <p>- Fluides de uma SPA</p>
-                        <p>- Sistema de carrinho usando localStorage</p>
+                        <p>- Sistema de Login completo, com encriptamento de senha, e token <span className="">JWT</span></p>
                         <p>- Rotas dinâmicas para cada produto</p>
+                        <p>- Sistema de carrinho usando localStorage</p>
+                        <p>- Fluides de uma SPA</p>
                       </div>
                       <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
                         <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
@@ -305,7 +305,7 @@ export default function Home() {
 
 
                     {/* Butoies */}
-                    <div className="text-5xl flex justify-center gap-16 my-10  text-gray-600 dark:text-gray-400">
+                    <div className="text-5xl flex justify-center gap-16 mt-10  text-gray-600 dark:text-gray-400">
                       <a href="https://github.com/henriquemattia"
                         target='_blank'
                         className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
