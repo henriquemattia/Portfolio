@@ -25,7 +25,7 @@ import postgresql from "../public/tecnologias/postgresql.png";
 import ngCash from "../public/portfolio/ngCash.png";
 import habits from "../public/portfolio/habits.png";
 import tera from "../public/portfolio/tera.png";
-import web2 from "../public/portfolio/web2.png";
+import music from "../public/portfolio/music.png";
 import web3 from "../public/portfolio/web3.png";
 import web5 from "../public/portfolio/web5.png";
 import web6 from "../public/portfolio/web6.png";
@@ -269,17 +269,43 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={habits}
+                src={tera}
               />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img1}
-              >Ver mais...</button>
+              >Sobre...</button>
               {
                 image1 == true ?
-                  <div className="text-white">
+
+
+                  <div className="border-2 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-800">
+                    {/* TEXT DESCRIPTION */}
+                    <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
+                      <h4 className="font-bold text-xl">Descrição</h4>
+                      <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        HFM-Roupas foi meu primeiro projeto Full-Stack em grande escala, que é um e-commerce de roupas,<span className="text-teal-600">100%</span> desenvolvido por mim durante o curso "Full Stack developer" da TERA.
+                      </p>
+                      <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
+                      <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        <p>- Sistema de Login completo, com encriptamento de senha, e token <span className="text-teal-600">JWT</span></p>
+                        <p>- Fluides de uma SPA</p>
+                        <p>- Sistema de carrinho usando localStorage</p>
+                        <p>- Rotas dinâmicas para cada produto</p>
+                      </div>
+                      <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
+                        <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                            <p>React + vite,</p>
+                            <p>React-bootstrap,</p>
+                            <p>React-hook-form,</p>
+                            <p>React-icons,</p>
+                            <p>Python + Flask,</p>
+                        </div>
+                      <h4 className="text-xl font-bold">)</h4>
+                    </div>
+
 
                     {/* Butoies */}
-                    <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                    <div className="text-5xl flex justify-center gap-16 mt-10 text-gray-600 dark:text-gray-400">
                       <a href="https://github.com/henriquemattia"
                         target='_blank'
                         className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
@@ -295,15 +321,15 @@ export default function Home() {
               }
 
             </div>
-            <div className="basis-1/3 flex-1"> {/* Imagem 2*/}
+            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 2*/}
               <Image
-                className="rounded-lg object-cover transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={tera}
+                src={music}
               />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img2}
               >Ver mais...</button>
               {
@@ -334,21 +360,21 @@ export default function Home() {
 
 
             </div>
-            <div className="basis-1/3 flex-1"> {/* Imagem 3*/}
+            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 3*/}
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web3}
+                src={habits}
               />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img3}
               >Ver mais...</button>
               {image3 == true ? <div className="text-white">clicado</div> : null}
               {/* Butoies */}
             </div>
-            <div className="basis-1/3 flex-1"> {/* Imagem 4*/}
+            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 4*/}
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -356,38 +382,10 @@ export default function Home() {
                 layout="responsive"
                 src={ngCash}
               />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img4}
               >Ver mais...</button>
               {image4 == true ? <div className="text-white">clicado</div> : null}
-              {/* Butoies */}
-            </div>
-            <div className="basis-1/3 flex-1"> {/* Imagem 5*/}
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
-                onClick={img5}
-              >Ver mais...</button>
-              {image5 == true ? <div className="text-white">clicado</div> : null}
-              {/* Butoies */}
-            </div>
-            <div className="basis-1/3 flex-1"> {/* Imagem 6*/}
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
-                onClick={img6}
-              >Ver mais...</button>
-              {image6 == true ? <div className="text-white">clicado</div> : null}
               {/* Butoies */}
             </div>
           </div>
