@@ -271,14 +271,14 @@ export default function Home() {
                 layout="responsive"
                 src={tera}
               />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
+              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 mb-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img1}
               >Sobre...</button>
               {
                 image1 == true ?
 
 
-                  <div className="border-2 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-800">
+                  <div className="border-2 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700">
                     {/* TEXT DESCRIPTION */}
                     <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
                       <h4 className="font-bold text-xl">Descrição</h4>
@@ -305,7 +305,7 @@ export default function Home() {
 
 
                     {/* Butoies */}
-                    <div className="text-5xl flex justify-center gap-16 mt-10 text-gray-600 dark:text-gray-400">
+                    <div className="text-5xl flex justify-center gap-16 my-10  text-gray-600 dark:text-gray-400">
                       <a href="https://github.com/henriquemattia"
                         target='_blank'
                         className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
