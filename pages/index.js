@@ -24,6 +24,7 @@ import postgresql from "../public/tecnologias/postgresql.png";
 
 import ngCash from "../public/portfolio/ngCash.png";
 import habits from "../public/portfolio/habits.png";
+import tera from "../public/portfolio/tera.png";
 import web2 from "../public/portfolio/web2.png";
 import web3 from "../public/portfolio/web3.png";
 import web5 from "../public/portfolio/web5.png";
@@ -296,11 +297,11 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1"> {/* Imagem 2*/}
               <Image
-                className="rounded-lg object-cover transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                className="rounded-lg object-cover transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web2}
+                src={tera}
               />
               <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-linear duration-150 hover:text-teal-500"
                 onClick={img2}
