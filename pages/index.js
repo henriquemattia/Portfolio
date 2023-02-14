@@ -26,9 +26,6 @@ import ngCash from "../public/portfolio/ngCash.png";
 import habits from "../public/portfolio/habits.png";
 import tera from "../public/portfolio/tera.png";
 import music from "../public/portfolio/music.png";
-import web3 from "../public/portfolio/web3.png";
-import web5 from "../public/portfolio/web5.png";
-import web6 from "../public/portfolio/web6.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -263,14 +260,15 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 1*/}
-
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={tera}
-              />
+              <a className="cursor-alias" href="https://roupas-hfm.vercel.app/" target="_blank">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={tera}
+                />
+              </a>
               <button className=" text-teal-600 font-bold text-lg mt-2 pl-2 mb-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img1}
               >Sobre...</button>
@@ -293,13 +291,13 @@ export default function Home() {
                         <p>- Fluides de uma SPA</p>
                       </div>
                       <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
-                        <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                            <p>React + vite,</p>
-                            <p>React-bootstrap,</p>
-                            <p>React-hook-form,</p>
-                            <p>React-icons,</p>
-                            <p>Python + Flask,</p>
-                        </div>
+                      <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        <p>React + vite,</p>
+                        <p>React-bootstrap,</p>
+                        <p>React-hook-form,</p>
+                        <p>React-icons,</p>
+                        <p>Python + Flask,</p>
+                      </div>
                       <h4 className="text-xl font-bold">)</h4>
                     </div>
 
@@ -322,24 +320,24 @@ export default function Home() {
 
             </div>
             <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 2*/}
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={music}
-              />
+              <a className="cursor-not-allowed" href="https://roupas-hfm.vercel.app/" target="_blank">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={music}
+                />
+              </a>
               <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img2}
               >Ver mais...</button>
               {
                 image2 == true ?
-                  <div className="text-white"><p>jhvkjfjkvkvjkvkjhvjh</p>
-                    <p>jhvkjfjkvkvjkvkjhvjh</p>
-                    <p>jhvkjfjkvkvjkvkjhvjh</p>
-                    <p>jhvkjfjkvkvjkvkjhvjh</p>
-                    <p>jhvkjfjkvkvjkvkjhvjh</p>
-                    <p>jhvkjfjkvkvjkvkjhvjh</p>
+                  <div className="text-white">
+
+                    <p>Em construção...</p>
+
 
                     {/* biotoius */}
                     <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -362,7 +360,7 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 3*/}
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover cursor-not-allowed"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -371,12 +369,28 @@ export default function Home() {
               <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img3}
               >Ver mais...</button>
-              {image3 == true ? <div className="text-white">clicado</div> : null}
+              {image3 == true ? <div className="text-white">
+                <p>Em construção...</p>
+
+                {/* Butoies */}
+                <div className="text-5xl flex justify-center gap-16 mt-10  text-gray-600 dark:text-gray-400">
+                  <a href="https://github.com/henriquemattia"
+                    target='_blank'
+                    className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                  > <AiFillGithub /> </a>
+
+                  <a href="https://www.linkedin.com/in/henriquemattia/"
+                    target='_blank'
+                    className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                  > <AiFillLinkedin /> </a>
+                </div>
+              </div>
+                : null}
               {/* Butoies */}
             </div>
             <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 4*/}
               <Image
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover cursor-not-allowed"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -385,7 +399,23 @@ export default function Home() {
               <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img4}
               >Ver mais...</button>
-              {image4 == true ? <div className="text-white">clicado</div> : null}
+              {image4 == true ? <div className="text-white">
+                <p>Em construção...</p>
+
+                {/* Butoies */}
+                <div className="text-5xl flex justify-center gap-16 mt-10  text-gray-600 dark:text-gray-400">
+                  <a href="https://github.com/henriquemattia"
+                    target='_blank'
+                    className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                  > <AiFillGithub /> </a>
+
+                  <a href="https://www.linkedin.com/in/henriquemattia/"
+                    target='_blank'
+                    className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                  > <AiFillLinkedin /> </a>
+                </div>
+              </div>
+                : null}
               {/* Butoies */}
             </div>
           </div>
