@@ -122,19 +122,19 @@ export default function Home() {
         {/* description of me */}
         <section>
           <div>
-            <h3 className="font-bold text-black mt-10 text-3xl py-1 opacity-80 dark:text-white ">Quem sou eu?</h3>
-            <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300">
+            <h3 className="font-bold text-black mt-10 text-3xl py-1 opacity-90 dark:text-white ">Quem sou eu?</h3>
+            <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
               Sou um jovem desenvolvedor, e entusiasta da <span className="text-teal-500"> tecnologia!</span> Em 2022 comecei a estudar a tão sonhada programação, começando com pequenos cursos no Youtube e muita <span className="text-teal-500">vontade!</span> Atualmente já possuo certificações de 3 instituições de ensino tec. E venho a cada semana me especializando mais e mais.
 
             </p>
-            <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300">
+            <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
               Abaixo estão algumas das pricipais <span className="text-teal-500">tecnologias</span> com que sei trabalhar.
             </p>
           </div>
           <div className="xl:flex gap-10">
             <div className="text-center shadow-xl p-10 rounded-xl my-10 
             transition duration-150 ease-in transform hover:-translate-y-1 hover:scale-105
-          dark:bg-zinc-100  opacity-90 flex-1"
+          dark:bg-white  opacity-90 flex-1"
             >
               <Image src={react} width={100} height={100} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
@@ -245,7 +245,7 @@ export default function Home() {
             <h3 className=" font-bold text-3xl py-1 text-zinc-900 opacity-90 dark:text-white ">
               Portfólio
             </h3>
-            <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300">
+            <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -253,7 +253,7 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="font-semibold text-md py-2 leading-8 text-zinc-900 opacity-80 dark:text-zinc-300">
+            <p className="font-semibold text-md py-2 leading-8 text-zinc-900 opacity-90 dark:text-zinc-300">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
@@ -304,7 +304,7 @@ export default function Home() {
 
                     {/* Butoies */}
                     <div className="text-5xl flex justify-center gap-16 mt-10  text-gray-600 dark:text-gray-400">
-                      <a href="https://github.com/henriquemattia"
+                      <a href="https://github.com/henriquemattia/E-commerce-front"
                         target='_blank'
                         className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                       > <AiFillGithub /> </a>
@@ -374,12 +374,12 @@ export default function Home() {
 
                 {/* Butoies */}
                 <div className="text-5xl flex justify-center gap-16 mt-10  text-gray-600 dark:text-gray-400">
-                  <a href="https://github.com/henriquemattia"
+                  <a href="https://github.com/henriquemattia/NLW-stup"
                     target='_blank'
                     className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                   > <AiFillGithub /> </a>
 
-                  <a href="https://www.linkedin.com/in/henriquemattia/"
+                  <a href="https://www.linkedin.com/posts/henriquemattia_projeto-finalizado-a-algumas-semanas-atr%C3%A1s-activity-7031070482623807488-ghAp?utm_source=share&utm_medium=member_desktop"
                     target='_blank'
                     className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                   > <AiFillLinkedin /> </a>
