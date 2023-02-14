@@ -246,16 +246,10 @@ export default function Home() {
               Portfólio
             </h3>
             <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+              Em pouco mais de uma ano de <span className="text-teal-500">desenvolvimento</span> criei e desenvolvi alguns projetos, sendo alguns deles 100% autoria minha e outros com auxilio de mentores e professores experientes.
             </p>
             <p className="font-semibold text-md py-2 leading-8 text-zinc-900 opacity-90 dark:text-zinc-300">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              Abaixo estao alguns dos <span className="text-teal-500">principais</span> projetos, contando com descrição, tecnologias usadas, link de deploys clicando nas imagens e links uteis clicando em <span className="text-teal-500">"Sobre..."</span>
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -276,7 +270,126 @@ export default function Home() {
                 image1 == true ?
 
 
-                  <div className="border-2 mb-14 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700 ">
+                  <div className="border-2 mb-10 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700 ">
+                    {/* TEXT DESCRIPTION */}
+                    <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
+                      <h4 className="font-bold text-xl">Descrição</h4>
+                      <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        HFM-Roupas foi meu primeiro projeto Full-Stack em grande escala, que é um e-commerce de roupas <span className="text-teal-600">100%</span> desenvolvido por mim durante o curso <span className="text-teal-600">"Full Stack developer"</span>  da TERA.
+                      </p>
+                      <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
+                      <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        <p>- Sistema de Login completo, com encriptamento de senha, e token <span className="">JWT</span></p>
+                        <p>- Rotas dinâmicas para cada produto</p>
+                        <p>- Sistema de carrinho usando localStorage</p>
+                        <p>- Fluides de uma SPA</p>
+                      </div>
+                      <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
+                      <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        <p>React + vite,</p>
+                        <p>React-bootstrap,</p>
+                        <p>React-hook-form,</p>
+                        <p>React-icons,</p>
+                        <p>Python + Flask,</p>
+                      </div>
+                      <h4 className="text-xl font-bold">)</h4>
+                    </div>
+
+
+                    {/* Butoies */}
+                    <div className="text-5xl flex justify-center gap-16 mt-10 pb-3 text-gray-600 dark:text-gray-400">
+                      <a href="https://github.com/henriquemattia/E-commerce-front"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillGithub /> </a>
+
+                      <a href="https://www.linkedin.com/in/henriquemattia/"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillLinkedin /> </a>
+                    </div>
+                  </div>
+                  : null
+              }
+
+            </div>
+            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 2*/}
+              <a className="cursor-not-allowed" href="https://roupas-hfm.vercel.app/" target="_blank">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={music}
+                />
+              </a>
+              <button className=" text-teal-600 font-bold text-lg mt-2 pl-2 mb-2 transition ease-in duration-150 hover:text-teal-400"
+                onClick={img2}
+              >Sobre...</button>
+              {
+                image2 == true ?
+
+
+                  <div className="border-2 mb-10 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700 ">
+                    {/* TEXT DESCRIPTION */}
+                    <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
+                      <h4 className="font-bold text-xl">Descrição</h4>
+                      <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        HFM-Roupas foi meu primeiro projeto Full-Stack em grande escala, que é um e-commerce de roupas <span className="text-teal-600">100%</span> desenvolvido por mim durante o curso <span className="text-teal-600">"Full Stack developer"</span>  da TERA.
+                      </p>
+                      <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
+                      <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        <p>- Sistema de Login completo, com encriptamento de senha, e token <span className="">JWT</span></p>
+                        <p>- Rotas dinâmicas para cada produto</p>
+                        <p>- Sistema de carrinho usando localStorage</p>
+                        <p>- Fluides de uma SPA</p>
+                      </div>
+                      <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
+                      <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        <p>React + vite,</p>
+                        <p>React-bootstrap,</p>
+                        <p>React-hook-form,</p>
+                        <p>React-icons,</p>
+                        <p>Python + Flask,</p>
+                      </div>
+                      <h4 className="text-xl font-bold">)</h4>
+                    </div>
+
+
+                    {/* Butoies */}
+                    <div className="text-5xl flex justify-center gap-16 mt-10 pb-3 text-gray-600 dark:text-gray-400">
+                      <a href="https://github.com/henriquemattia/E-commerce-front"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillGithub /> </a>
+
+                      <a href="https://www.linkedin.com/in/henriquemattia/"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillLinkedin /> </a>
+                    </div>
+                  </div>
+                  : null
+              }
+
+
+            </div>
+            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 3*/}
+              <Image
+                className="rounded-lg object-cover cursor-not-allowed"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={habits}
+              />
+              <button className=" text-teal-600 font-bold text-lg mt-2 pl-2 mb-2 transition ease-in duration-150 hover:text-teal-400"
+                onClick={img3}
+              >Sobre...</button>
+              {
+                image3 == true ?
+
+
+                  <div className="border-2 mb-10 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700 ">
                     {/* TEXT DESCRIPTION */}
                     <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
                       <h4 className="font-bold text-xl">Descrição</h4>
@@ -304,6 +417,64 @@ export default function Home() {
 
                     {/* Butoies */}
                     <div className="text-5xl flex justify-center gap-16 mt-10  text-gray-600 dark:text-gray-400">
+                      <a href="https://github.com/henriquemattia/NLW-stup"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillGithub /> </a>
+
+                      <a href="https://www.linkedin.com/posts/henriquemattia_projeto-finalizado-a-algumas-semanas-atr%C3%A1s-activity-7031070482623807488-ghAp?utm_source=share&utm_medium=member_desktop"
+                        target='_blank'
+                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      > <AiFillLinkedin /> </a>
+                    </div>
+                  </div>
+                  : null
+              }
+            </div>
+
+            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 4*/}
+              <Image
+                className="rounded-lg object-cover cursor-not-allowed"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={ngCash}
+              />
+              <button className=" text-teal-600 font-bold text-lg mt-2 pl-2 mb-2 transition ease-in duration-150 hover:text-teal-400"
+                onClick={img4}
+              >Sobre...</button>
+              {
+                image4 == true ?
+
+
+                  <div className="border-2 mb-10 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700 ">
+                    {/* TEXT DESCRIPTION */}
+                    <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
+                      <h4 className="font-bold text-xl">Descrição</h4>
+                      <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        HFM-Roupas foi meu primeiro projeto Full-Stack em grande escala, que é um e-commerce de roupas <span className="text-teal-600">100%</span> desenvolvido por mim durante o curso <span className="text-teal-600">"Full Stack developer"</span>  da TERA.
+                      </p>
+                      <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
+                      <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        <p>- Sistema de Login completo, com encriptamento de senha, e token <span className="">JWT</span></p>
+                        <p>- Rotas dinâmicas para cada produto</p>
+                        <p>- Sistema de carrinho usando localStorage</p>
+                        <p>- Fluides de uma SPA</p>
+                      </div>
+                      <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
+                      <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        <p>React + vite,</p>
+                        <p>React-bootstrap,</p>
+                        <p>React-hook-form,</p>
+                        <p>React-icons,</p>
+                        <p>Python + Flask,</p>
+                      </div>
+                      <h4 className="text-xl font-bold">)</h4>
+                    </div>
+
+
+                    {/* Butoies */}
+                    <div className="text-5xl flex justify-center gap-16 mt-10 pb-3 text-gray-600 dark:text-gray-400">
                       <a href="https://github.com/henriquemattia/E-commerce-front"
                         target='_blank'
                         className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
@@ -318,105 +489,6 @@ export default function Home() {
                   : null
               }
 
-            </div>
-            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 2*/}
-              <a className="cursor-not-allowed" href="https://roupas-hfm.vercel.app/" target="_blank">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={music}
-                />
-              </a>
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
-                onClick={img2}
-              >Ver mais...</button>
-              {
-                image2 == true ?
-                  <div className="text-white">
-
-                    <p>Em construção...</p>
-
-
-                    {/* biotoius */}
-                    <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-                      <a href="https://github.com/henriquemattia"
-                        target='_blank'
-                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                      > <AiFillGithub /> </a>
-
-                      <a href="https://www.linkedin.com/in/henriquemattia/"
-                        target='_blank'
-                        className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                      > <AiFillLinkedin /> </a>
-
-                    </div>
-                  </div>
-                  : null
-              }
-
-
-            </div>
-            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 3*/}
-              <Image
-                className="rounded-lg object-cover cursor-not-allowed"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={habits}
-              />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
-                onClick={img3}
-              >Ver mais...</button>
-              {image3 == true ? <div className="text-white">
-                <p>Em construção...</p>
-
-                {/* Butoies */}
-                <div className="text-5xl flex justify-center gap-16 mt-10  text-gray-600 dark:text-gray-400">
-                  <a href="https://github.com/henriquemattia/NLW-stup"
-                    target='_blank'
-                    className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                  > <AiFillGithub /> </a>
-
-                  <a href="https://www.linkedin.com/posts/henriquemattia_projeto-finalizado-a-algumas-semanas-atr%C3%A1s-activity-7031070482623807488-ghAp?utm_source=share&utm_medium=member_desktop"
-                    target='_blank'
-                    className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                  > <AiFillLinkedin /> </a>
-                </div>
-              </div>
-                : null}
-              {/* Butoies */}
-            </div>
-            <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 4*/}
-              <Image
-                className="rounded-lg object-cover cursor-not-allowed"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={ngCash}
-              />
-              <button className="text-teal-600 font-bold text-lg mt-2 pl-2 transition ease-in duration-150 hover:text-teal-400"
-                onClick={img4}
-              >Ver mais...</button>
-              {image4 == true ? <div className="text-white">
-                <p>Em construção...</p>
-
-                {/* Butoies */}
-                <div className="text-5xl flex justify-center gap-16 mt-10  text-gray-600 dark:text-gray-400">
-                  <a href="https://github.com/henriquemattia"
-                    target='_blank'
-                    className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                  > <AiFillGithub /> </a>
-
-                  <a href="https://www.linkedin.com/in/henriquemattia/"
-                    target='_blank'
-                    className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                  > <AiFillLinkedin /> </a>
-                </div>
-              </div>
-                : null}
-              {/* Butoies */}
             </div>
           </div>
         </section>
