@@ -67,7 +67,7 @@ export default function Home() {
         {/* navbar and first block */}
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-md  sm:text-xl">Olá!</h1>
+            <h1 className="font-burtons text-md  sm:text-2xl">OLA!</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
