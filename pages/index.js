@@ -246,10 +246,10 @@ export default function Home() {
               Portfólio
             </h3>
             <p className="font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-              Em pouco mais de uma ano de <span className="text-teal-500">desenvolvimento</span> criei e desenvolvi alguns projetos, sendo alguns deles 100% autoria minha e outros com auxilio de mentores e professores experientes.
+              Em pouco mais de um ano de <span className="text-teal-500">desenvolvimento</span> criei e desenvolvi alguns projetos, sendo alguns deles 100% autoria minha e outros com auxilio de mentores e professores experientes.
             </p>
             <p className="font-semibold text-md py-2 leading-8 text-zinc-900 opacity-90 dark:text-zinc-300">
-              Abaixo estao alguns dos <span className="text-teal-500">principais</span> projetos, contando com descrição, tecnologias usadas, link de deploys clicando nas imagens e links uteis clicando em <span className="text-teal-500">"Sobre..."</span>
+              Abaixo estão alguns dos <span className="text-teal-500">princípais</span> projetos, contando com descrição, tecnologias usadas, link de deploys clicando nas imagens e links uteis clicando em <span className="text-teal-500">"Sobre..."</span>
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -335,24 +335,30 @@ export default function Home() {
                     <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
                       <h4 className="font-bold text-xl">Descrição</h4>
                       <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                        HFM-Roupas foi meu primeiro projeto Full-Stack em grande escala, que é um e-commerce de roupas <span className="text-teal-600">100%</span> desenvolvido por mim durante o curso <span className="text-teal-600">"Full Stack developer"</span>  da TERA.
+                        Spotify 2.0 Clone, é uma aplicação que toca as principais <span className="text-teal-500">musicas</span> do momento, providas pelo "Shazam CORE API".
+                        <p>
+                          Esse foi um prejeto provido pelo "JavaScript Mastery", onde a principal meta é conhecer e utilizar tecnologias como Redux, Tailwind e RapidAPi.
+                        </p>
                       </p>
                       <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
                       <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                        <p>- Sistema de Login completo, com encriptamento de senha, e token <span className="">JWT</span></p>
-                        <p>- Rotas dinâmicas para cada produto</p>
-                        <p>- Sistema de carrinho usando localStorage</p>
-                        <p>- Fluides de uma SPA</p>
+                        <p>- Buscar as top musicas do momento</p>
+                        <p>- Tocar qualquer musica listada</p>
+                        <p>- Sistema de player completo, com opções de voleme play/pause etc...</p>
+                        <p>- Design elegante e responsivo</p>
                       </div>
                       <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
                       <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
                         <p>React + vite,</p>
-                        <p>React-bootstrap,</p>
-                        <p>React-hook-form,</p>
-                        <p>React-icons,</p>
-                        <p>Python + Flask,</p>
+                        <p>RapidApi,</p>
+                        <p>Tailwind,</p>
+                        <p>Redux,</p>
                       </div>
                       <h4 className="text-xl font-bold">)</h4>
+                      <h4 className="font-bold mt-3 text-xl">Observações:</h4>
+                      <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
+                        <p>- Deploy ainda a caminho! Aplicação em desenvolvimento.</p>
+                      </div>
                     </div>
 
 
