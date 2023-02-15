@@ -36,6 +36,7 @@ export default function Home() {
   const [image4, setImage4] = useState(false)
   const [image5, setImage5] = useState(false)
   const [image6, setImage6] = useState(false)
+
   function img1() {
     setImage1(!image1)
   }
@@ -77,7 +78,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-3 py-2 border-none rounded-md ml-5 sm:px-4 sm:ml-8"
-                  href="#"
+                  href="#projects"
                 >
                   Projects
                 </a>
@@ -240,7 +241,7 @@ export default function Home() {
         </section>
 
         {/* Portfolio */}
-        <section className="py-10">
+        <section id="projects" className="py-10">
           <div>
             <h3 className=" font-bold text-3xl py-1 text-zinc-900 opacity-90 dark:text-white ">
               Portfólio
@@ -313,6 +314,7 @@ export default function Home() {
               }
 
             </div>
+
             <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 2*/}
               <a className="cursor-not-allowed" href="https://roupas-hfm.vercel.app/" target="_blank">
                 <Image
@@ -335,16 +337,16 @@ export default function Home() {
                     <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
                       <h4 className="font-bold text-xl">Descrição</h4>
                       <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                        Spotify 2.0 Clone, é uma aplicação que toca as principais <span className="text-teal-500">musicas</span> do momento, providas pelo "Shazam CORE API".
+                        Spotify 2.0 Clone, é um player de musicas que toca as principais <span className="text-teal-500">musicas</span> do momento, providas pelo "Shazam CORE API".
                         <p>
-                          Esse foi um prejeto provido pelo "JavaScript Mastery", onde a principal meta é conhecer e utilizar tecnologias como Redux, Tailwind e RapidAPi.
+                          Esse foi um prejeto provido pelo "JavaScript Mastery", onde a principal meta é aprender e utilizar tecnologias como Redux, Tailwind e RapidAPi.
                         </p>
                       </p>
                       <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
                       <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
                         <p>- Buscar as top musicas do momento</p>
                         <p>- Tocar qualquer musica listada</p>
-                        <p>- Sistema de player completo, com opções de voleme play/pause etc...</p>
+                        <p>- Sistema de player completo, com opções de volume, play/pause etc...</p>
                         <p>- Design elegante e responsivo</p>
                       </div>
                       <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
@@ -380,6 +382,7 @@ export default function Home() {
 
 
             </div>
+
             <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 3*/}
               <Image
                 className="rounded-lg object-cover cursor-not-allowed"
@@ -394,28 +397,28 @@ export default function Home() {
               {
                 image3 == true ?
 
-
                   <div className="border-2 mb-10 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700 ">
                     {/* TEXT DESCRIPTION */}
                     <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
                       <h4 className="font-bold text-xl">Descrição</h4>
                       <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                        HFM-Roupas foi meu primeiro projeto Full-Stack em grande escala, que é um e-commerce de roupas <span className="text-teal-600">100%</span> desenvolvido por mim durante o curso <span className="text-teal-600">"Full Stack developer"</span>  da TERA.
+                        Habits foi um projeto desenvolvido em 4 dias de aula no evento NLW da Rocketseat, o objetivo era uma App <span className="text-teal-500">Web</span> full stack com sua versão <span className="text-teal-500">mobile</span> para androiod e IOS, que rastreia hábitos diarios.
                       </p>
                       <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
                       <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                        <p>- Sistema de Login completo, com encriptamento de senha, e token <span className="">JWT</span></p>
-                        <p>- Rotas dinâmicas para cada produto</p>
-                        <p>- Sistema de carrinho usando localStorage</p>
-                        <p>- Fluides de uma SPA</p>
+                        <p>- Criação de hábitos com dias personalizados</p>
+                        <p>- Disponibilidade de completear e descompletar hábitos criados</p>
+                        <p>- Sistema que nao permite modificação de dias posteriores ao atual</p>
+                        <p>- Versão mobile 100% funcional</p>
                       </div>
                       <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
                       <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
                         <p>React + vite,</p>
-                        <p>React-bootstrap,</p>
-                        <p>React-hook-form,</p>
-                        <p>React-icons,</p>
-                        <p>Python + Flask,</p>
+                        <p>TypeScript,</p>
+                        <p>Tailwind,</p>
+                        <p>Radix,</p>
+                        <p>Node.js + Prisma,</p>
+                        <p>React-Native,</p>
                       </div>
                       <h4 className="text-xl font-bold">)</h4>
                     </div>
@@ -458,22 +461,21 @@ export default function Home() {
                     <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
                       <h4 className="font-bold text-xl">Descrição</h4>
                       <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                        HFM-Roupas foi meu primeiro projeto Full-Stack em grande escala, que é um e-commerce de roupas <span className="text-teal-600">100%</span> desenvolvido por mim durante o curso <span className="text-teal-600">"Full Stack developer"</span>  da TERA.
+                      Esse foi o desafio lançado pela NG.CASH, um site aonde usurários consigam <span className="text-teal-500">transferir</span> dinheiro um para os outros, consultar seu saldo, e ver as transferências efetuadas para <span className="text-teal-500">outros</span> usuários.
                       </p>
                       <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
                       <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                        <p>- Sistema de Login completo, com encriptamento de senha, e token <span className="">JWT</span></p>
-                        <p>- Rotas dinâmicas para cada produto</p>
-                        <p>- Sistema de carrinho usando localStorage</p>
-                        <p>- Fluides de uma SPA</p>
+                        <p>- Sistema de Login completo, com encriptamento de senha, e token JWT</p>
+                        <p>- Ver saldo atual</p>
+                        <p>- Transferencia de dinheiro para outros usuários</p>
+                        <p>- Conferir transferências efetuadas</p>
                       </div>
                       <h4 className="font-bold mt-3 text-xl">Tecnologias usadas (</h4>
                       <div className="pt-1 ml-7 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
                         <p>React + vite,</p>
-                        <p>React-bootstrap,</p>
-                        <p>React-hook-form,</p>
-                        <p>React-icons,</p>
-                        <p>Python + Flask,</p>
+                        <p>Typescript,</p>
+                        <p>Node + TypeORm,</p>
+                        <p>Docker,</p>
                       </div>
                       <h4 className="text-xl font-bold">)</h4>
                     </div>
@@ -481,12 +483,12 @@ export default function Home() {
 
                     {/* Butoies */}
                     <div className="text-5xl flex justify-center gap-16 mt-10 pb-3 text-gray-600 dark:text-gray-400">
-                      <a href="https://github.com/henriquemattia/E-commerce-front"
+                      <a href="https://github.com/henriquemattia/Ng.Cash"
                         target='_blank'
                         className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                       > <AiFillGithub /> </a>
 
-                      <a href="https://www.linkedin.com/in/henriquemattia/"
+                      <a href="https://www.linkedin.com/posts/henriquemattia_javascript-reactjs-nodejs-activity-7006345172498190336--iC7?utm_source=share&utm_medium=member_desktop"
                         target='_blank'
                         className="transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                       > <AiFillLinkedin /> </a>
