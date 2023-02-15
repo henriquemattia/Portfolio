@@ -142,7 +142,7 @@ export default function Home() {
                 Front-end
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
-                No front-end a linguagem que utilo é o <span className="text-teal-600">JavaScript</span> com a biblioteca <span className="text-teal-600">React.Js</span> entre outras features.
+                No front-end a linguagem que utilizo é o <span className="text-teal-600">JavaScript</span> com a biblioteca <span className="text-teal-600">React.Js</span> entre outras features.
               </p>
 
               <h4 className="py-4 text-teal-600 text-xl font-bold">Principais</h4>
@@ -177,7 +177,7 @@ export default function Home() {
                 Back-end
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
-                No back-end as coisas continuam no mesmo ambiente com o <span className="text-teal-600">Node.Js</span>, e bancos de dados como NoSQL e principalmente <span className="text-teal-600">SQL</span>.
+                No back-end as coisas continuam no mesmo ambiente com o <span className="text-teal-600">Node.Js</span> e bancos de dados, como NoSQL e principalmente <span className="text-teal-600">SQL</span>.
               </p>
 
               <h4 className="py-4 text-teal-600 text-xl font-bold">Principais</h4>
@@ -212,7 +212,7 @@ export default function Home() {
                 DevOps e Outros
               </h3>
               <p className="py-2 font-semibold opacity-80 text-lg">
-                Apesar de <span className="text-teal-600">DevOps</span> e <span className="text-teal-600">mobile</span> não serem minha áreas de especialização consigo utilizar algumas tecnologias como...
+                Apesar de <span className="text-teal-600">DevOps</span> e <span className="text-teal-600">mobile</span> não serem minhas áreas de especialização consigo utilizar algumas tecnologias como...
               </p>
 
               <h4 className="py-4 text-teal-600 text-xl font-bold">Principais</h4>
@@ -250,7 +250,7 @@ export default function Home() {
               Em pouco mais de um ano de <span className="text-teal-500">desenvolvimento</span> criei e desenvolvi alguns projetos, sendo alguns deles 100% autoria minha e outros com auxilio de mentores e professores experientes.
             </p>
             <p className="font-semibold text-md py-2 leading-8 text-zinc-900 opacity-90 dark:text-zinc-300">
-              Abaixo estão alguns dos <span className="text-teal-500">princípais</span> projetos, contando com descrição, tecnologias usadas, link de deploys clicando nas imagens e links uteis clicando em <span className="text-teal-500">"Sobre..."</span>
+              Abaixo estão alguns dos <span className="text-teal-500">principais</span> projetos. Clicando em <span className="text-teal-500">"Sobre..."</span> você terá acesso a descrição de cada projteo, junto com as tecnologias utilizadas nele e alguns links úteis. 
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -318,7 +318,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 2*/}
               {/* <a className="cursor-not-allowed" href="https://roupas-hfm.vercel.app/" target="_blank"> */}
                 <Image
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover cursor-not-allowed"
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
