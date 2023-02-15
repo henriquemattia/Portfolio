@@ -316,7 +316,7 @@ export default function Home() {
             </div>
 
             <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 2*/}
-              <a className="cursor-not-allowed" href="https://roupas-hfm.vercel.app/" target="_blank">
+              {/* <a className="cursor-not-allowed" href="https://roupas-hfm.vercel.app/" target="_blank"> */}
                 <Image
                   className="rounded-lg object-cover"
                   width={"100%"}
@@ -324,7 +324,7 @@ export default function Home() {
                   layout="responsive"
                   src={music}
                 />
-              </a>
+              {/* </a> */}
               <button className=" text-teal-600 font-bold text-lg mt-2 pl-2 mb-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img2}
               >Sobre...</button>
