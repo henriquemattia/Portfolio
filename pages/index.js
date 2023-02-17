@@ -27,6 +27,8 @@ import habits from "../public/portfolio/habits.png";
 import tera from "../public/portfolio/tera.png";
 import music from "../public/portfolio/music.png";
 
+import Typewriter from 'typewriter-effect';
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -86,9 +88,22 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center sm:py-10">
-            <h2 className="font-extrabold text-4xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
+            {/* <h2 className="font-extrabold text-4xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
               Henrique Mattia
+            </h2> */}
+            <h2  className="font-extrabold text-4xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
+             
+            <Typewriter
+              options={{
+                strings: ['Henrique Mattia'],
+                autoStart: true,
+                delay: 150,
+                pauseFor: 5000,
+                loop: true,
+              }}
+            />
             </h2>
+
             <h3 className="font-bold text-zinc-900 text-2xl  opacity-90 dark:text-white md:text-4xl md:pt-5">
               Full stack Developer
             </h3>
@@ -250,7 +265,7 @@ export default function Home() {
               Em pouco mais de um ano de <span className="text-teal-500">desenvolvimento</span> criei e desenvolvi alguns projetos, sendo alguns deles 100% autoria minha e outros com auxilio de mentores e professores experientes.
             </p>
             <p className="font-semibold text-md py-2 leading-8 text-zinc-900 opacity-90 dark:text-zinc-300">
-              Abaixo estão alguns dos <span className="text-teal-500">principais</span> projetos. Clicando em <span className="text-teal-500">"Sobre..."</span> você terá acesso a descrição de cada projteo, junto com as tecnologias utilizadas nele e alguns links úteis. 
+              Abaixo estão alguns dos <span className="text-teal-500">principais</span> projetos. Clicando em <span className="text-teal-500">"Sobre..."</span> você terá acesso a descrição de cada projteo, junto com as tecnologias utilizadas nele e alguns links úteis.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -317,13 +332,13 @@ export default function Home() {
 
             <div className="basis-1/3 flex-1  transition duration-150 ease-out transform hover:-translate-y-1 hover:scale-105 hover:z-20"> {/* Imagem 2*/}
               {/* <a className="cursor-not-allowed" href="https://roupas-hfm.vercel.app/" target="_blank"> */}
-                <Image
-                  className="rounded-lg object-cover cursor-not-allowed"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={music}
-                />
+              <Image
+                className="rounded-lg object-cover cursor-not-allowed"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={music}
+              />
               {/* </a> */}
               <button className=" text-teal-600 font-bold text-lg mt-2 pl-2 mb-2 transition ease-in duration-150 hover:text-teal-400"
                 onClick={img2}
@@ -461,7 +476,7 @@ export default function Home() {
                     <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
                       <h4 className="font-bold text-xl">Descrição</h4>
                       <p className="pt-1 font-semibold text-md py-2 leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
-                      Esse foi o desafio lançado pela NG.CASH, um site aonde usurários consigam <span className="text-teal-500">transferir</span> dinheiro um para os outros, consultar seu saldo, e ver as transferências efetuadas para <span className="text-teal-500">outros</span> usuários.
+                        Esse foi o desafio lançado pela NG.CASH, um site aonde usurários consigam <span className="text-teal-500">transferir</span> dinheiro um para os outros, consultar seu saldo, e ver as transferências efetuadas para <span className="text-teal-500">outros</span> usuários.
                       </p>
                       <h4 className="font-bold mt-3 text-xl">Principais recursos</h4>
                       <div className="pt-1 font-semibold text-md leading-8 text-zinc-800 opacity-90 dark:text-zinc-300">
