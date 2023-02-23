@@ -150,7 +150,7 @@ export default function Home() {
           <div className="xl:flex gap-10">
             <div className="text-center shadow-xl p-10 rounded-xl my-10 
             transition duration-150 ease-in transform hover:-translate-y-1 hover:scale-105
-          dark:bg-white  opacity-90 flex-1"
+          dark:bg-white flex-1"
             >
               <Image src={react} width={100} height={100} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
@@ -185,7 +185,7 @@ export default function Home() {
 
             <div className="text-center shadow-xl p-10 rounded-xl my-10 
               transition duration-150 ease-in transform hover:-translate-y-1 hover:scale-105
-            dark:bg-zinc-100  opacity-90 flex-1"
+            dark:bg-zinc-100  flex-1"
             >
               <Image src={node} width={135} height={100} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
@@ -220,7 +220,7 @@ export default function Home() {
 
             <div className="text-center shadow-xl p-10 rounded-xl my-10 
               transition duration-150 ease-in transform hover:-translate-y-1 hover:scale-105
-            dark:bg-zinc-100  opacity-90 flex-1"
+            dark:bg-zinc-100  flex-1"
             >
               <Image src={devOps} width={235} height={110} />
               <h3 className="text-2xl font-bold pt-8 pb-2  ">
