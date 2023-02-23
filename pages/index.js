@@ -107,8 +107,11 @@ export default function Home() {
             <h3 className="font-bold text-zinc-900 text-2xl  opacity-90 dark:text-white md:text-4xl md:pt-5">
               Full stack Developer
             </h3>
-            <p className="font-semibold  text-md pt-9 pb-4 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300 max-w-xl mx-auto  md:text-lg ">
+            {/* <p className="font-semibold  text-md pt-9 pb-4 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300 max-w-xl mx-auto  md:text-lg ">
               Desenvolvedor que presta serviços para necessidades de conteúdo de programação. Junte-se a mim abaixo e vamos lá!
+            </p> */}
+            <p className="font-semibold  text-md pt-9 pb-4 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300 max-w-xl mx-auto  md:text-lg ">
+             Desenvolvedor cheio de energia e vontade de evoluir até o topo e dominar as principais tecnologias do mercado!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/henriquemattia"
