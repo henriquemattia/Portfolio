@@ -91,17 +91,17 @@ export default function Home() {
             {/* <h2 className="font-extrabold text-4xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
               Henrique Mattia
             </h2> */}
-            <h2  className="font-extrabold text-4xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
-             
-            <Typewriter
-              options={{
-                strings: ['Henrique Mattia'],
-                autoStart: true,
-                delay: 150,
-                pauseFor: 5000,
-                loop: true,
-              }}
-            />
+            <h2 className="font-extrabold text-4xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl">
+
+              <Typewriter
+                options={{
+                  strings: ['Henrique Mattia'],
+                  autoStart: true,
+                  delay: 150,
+                  pauseFor: 5000,
+                  loop: true,
+                }}
+              />
             </h2>
 
             <h3 className="font-bold text-zinc-900 text-2xl  opacity-90 dark:text-white md:text-4xl md:pt-5">
@@ -111,7 +111,7 @@ export default function Home() {
               Desenvolvedor que presta serviços para necessidades de conteúdo de programação. Junte-se a mim abaixo e vamos lá!
             </p> */}
             <p className="font-semibold  text-md pt-9 pb-4 leading-8 text-zinc-800 opacity-80 dark:text-zinc-300 max-w-xl mx-auto  md:text-lg ">
-             Desenvolvedor cheio de energia e vontade de evoluir até o topo e dominar as principais tecnologias do mercado!
+              Desenvolvedor cheio de energia e vontade de evoluir até o topo e dominar as principais tecnologias do mercado!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/henriquemattia"
@@ -286,9 +286,8 @@ export default function Home() {
                 onClick={img1}
               >Sobre...</button>
               {
-                image1 == true ?
-
-
+                image1 == true
+                  ?
                   <div className="border-2 mb-10 border-zinc-300 rounded-lg bg-gray-100 p-2 dark:bg-gray-800 dark:border-zinc-700 ">
                     {/* TEXT DESCRIPTION */}
                     <div className=" text-zinc-900  pl-5 pt-2 opacity-90 dark:text-white">
@@ -328,7 +327,8 @@ export default function Home() {
                       > <AiFillLinkedin /> </a>
                     </div>
                   </div>
-                  : null
+                  :
+                   null
               }
 
             </div>
