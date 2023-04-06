@@ -1,6 +1,6 @@
-# UI COPY
+# PORTFÓLIO PAGE
 
-Case técninco de Front-End da empresa Motorista PX
+Simples página com o intuito de mostrar minhas competencias, habilidades e projetos
 
 ## 🚀 Começando
 
@@ -32,12 +32,12 @@ npm run dev
 
 ___
 
-* [React](https://pt-br.reactjs.org/) - O framework web usado
-* [Vite](https://vitejs.dev/) - Ferramenta de compilação JavaScript
-* [React-Router-Doom](https://reactrouter.com/en/main) - Usado para gerar rotas 
+* [Next](https://nextjs.org/) - O framework web usado
+* [Tailwindcss](https://tailwindcss.com/) - Estilização
+* [typewriter-effect](https://www.npmjs.com/package/typewriter-effect) - Usado para Efeito de digitação 
 
 ___
 
 ## 📌 Link
 
-* [Motorista-PX](motorista-px.vercel.app)
+* [Portfólio](https://henrique-mattia.vercel.app/)
